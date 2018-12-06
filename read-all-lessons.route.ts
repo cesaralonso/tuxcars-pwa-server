@@ -1,8 +1,11 @@
 
-import {db} from "./database";
+// import {db} from "./database";
 
 
-export function readAllLessons(req, res) {
+const db = require('./database');
+
+
+module.exports =  function readAllLessons(req, res) {
 
     res.status(200).json({lessons:db.readAllLessons()});
 

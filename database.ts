@@ -1,6 +1,9 @@
 
 import * as _ from 'lodash';
-import {LESSONS} from "./database-data";
+//import {LESSONS} from "./database-data";
+
+
+const LESSONS = require("./database-data");
 
 
 class InMemoryDatabase {
@@ -13,7 +16,7 @@ class InMemoryDatabase {
 
 
 
-
-export const db = new InMemoryDatabase();
+const db = new InMemoryDatabase();
+module.exports = db;
 
 

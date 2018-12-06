@@ -1,7 +1,8 @@
+
 import {USER_SUBSCRIPTIONS} from "./in-memory-db";
 const webpush = require('web-push');
 
-export function sendNewsletter(req, res) {
+function sendNewsletter(req, res) {
 
     console.log('Total subscriptions', USER_SUBSCRIPTIONS.length);
 
@@ -33,3 +34,5 @@ export function sendNewsletter(req, res) {
 
 }
 
+
+module.exports = sendNewsletter;

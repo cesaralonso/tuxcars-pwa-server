@@ -1,6 +1,6 @@
 
 
-export const LESSONS = {
+const LESSONS = {
 
     1: {
         id: 1,
@@ -88,3 +88,5 @@ export const LESSONS = {
     }
 
 };
+
+module.exports =  LESSONS;
