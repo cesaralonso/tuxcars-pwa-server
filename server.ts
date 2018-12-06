@@ -4,10 +4,9 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const webpush = require('web-push');
 
-const readAllLessons = require('./read-all-lessons.route');
-const addPushSubscriber = require('./add-push-subscriber.route');
-const sendNewsletter = require('./send-newsletter.route');
-
+import {readAllLessons} from "./read-all-lessons.route";
+import {addPushSubscriber} from "./add-push-subscriber.route";
+import {sendNewsletter} from "./send-newsletter.route";
 
 /* LOCALS
 const vapidKeys = {
@@ -19,6 +18,7 @@ const vapidKeys = {
     "publicKey": "BKDqvtj7FSHmb9yNWrj6MkTMK1KCPCD2N2iSPZfUCF6vB0lM_ms1hPK4EmrVIAblrJtaa02fHN0d2H501C8cF3k",
     "privateKey": "cgT7MIO70HEz0ex5FBK0ezP6AVUIB6rycu9rBVcEDJY"
 }
+
 
 webpush.setVapidDetails(
     'mailto:cesar_alonso_m_g@hotmail.com',
