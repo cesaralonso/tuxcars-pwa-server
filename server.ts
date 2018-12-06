@@ -22,7 +22,7 @@ webpush.setVapidDetails(
 const app: Application = express();
 
 // Middleware
-app.use(cors({credentials: true, origin: 'http://localhost:3333'}));
+app.use(cors({credentials: true, origin: 'https://tuxcar-pwa.firebaseapp.com'}));
 
 app.use(bodyParser.json());
 
@@ -37,7 +37,7 @@ app.route('/api/newsletter')
     .post(sendNewsletter);
 
 // launch an HTTP Server
-const httpServer = app.listen(9000, () => {
+const httpServer = app.listen(3000, () => {
     console.log("HTTP Server running at http://localhost:" + httpServer.address().port);
 });
 
